@@ -48,5 +48,5 @@ A full-stack application to create, edit, and manage HTML-based templates. The a
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/simple-template-builder.git
-   cd simple-template-builder
+   [git clone https://github.com/your-username/simple-template-builder.git
+   cd simple-template-builder](https://github.com/Chanduadep/simple-template-bulider/tree/main)
