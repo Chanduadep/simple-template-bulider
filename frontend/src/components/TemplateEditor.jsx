@@ -12,15 +12,14 @@ const TemplateEditor = () => {
 
   useEffect(() => {
     if (id) {
-      setLoading(true);
+      console.log('Template ID:', id); 
       axios.get(`${BASE_URL}/api/templates/${id}`)
         .then(res => {
           setTemplate(res.data);
-          setLoading(false);
+          console.log('Template data:', res.data); 
         })
         .catch(err => {
           console.error('Error fetching template:', err);
-          setLoading(false);
         });
     }
   }, [id]);
@@ -40,7 +39,7 @@ const TemplateEditor = () => {
 
     request
       .then(res => {
-        console.log('Template saved');
+        console.log('Template saved' , res.data);
         navigate('/');  
       })
       .catch(err => {
@@ -55,13 +54,13 @@ const TemplateEditor = () => {
       <input
         type="text"
         name="name"
-        value={template.name}
+        value={template.name || ""}
         onChange={handleChange}
         placeholder="Template Name"
       />
       <textarea
         name="content"
-        value={template.content}
+        value={template.content || ""}
         onChange={handleChange}
         placeholder="Template Content"
       />
