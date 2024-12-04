@@ -37,8 +37,8 @@ body {
 }
 
 .nav-left button.active {
-  background-color: white;
-  color: #0d0d0e;
+  background-color:black;
+  color:grey;
 }
 
 .nav-left button:hover {
