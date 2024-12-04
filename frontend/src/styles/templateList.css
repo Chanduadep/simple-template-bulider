@@ -12,7 +12,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  background-color: #fafcfc;
+  background-color: #878888;
   color: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   position: sticky;
@@ -26,8 +26,8 @@ body {
 }
 
 .nav-left button {
-  background-color: lightgray;
-  color: rgb(22, 22, 22);
+  background-color: transparent;
+  color: white;
   border: none;
   font-size: 1rem;
   cursor: pointer;
@@ -37,8 +37,8 @@ body {
 }
 
 .nav-left button.active {
-  background-color:black;
-  color:grey;
+  background-color: white;
+  color: #0d0d0e;
 }
 
 .nav-left button:hover {
@@ -48,7 +48,7 @@ body {
 .nav-right .create-btn {
   padding: 10px 20px;
   background-color: #3f3f3f;
-  color: rgb(46, 46, 46);
+  color: white;
   border-radius: 5px;
   text-decoration: none;
   font-size: 1rem;
