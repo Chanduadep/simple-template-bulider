@@ -36,7 +36,7 @@ const TemplateList = () => {
         </div>
         <div className="nav-right">
           <Link to="/create" className="create-btn">
-            Create Template
+            Create 
           </Link>
         </div>
       </nav>
