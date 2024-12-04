@@ -1,0 +1,150 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f6;
+}
+
+.editor-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.editor-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Input Fields */
+.editor-container input,
+.editor-container textarea,
+.editor-container select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #333;
+}
+
+.editor-container textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.editor-container select {
+  cursor: pointer;
+}
+
+.editor-container button {
+  padding: 12px 20px;
+  margin: 10px 5px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.editor-container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.editor-container button:first-child {
+  background-color: #007bff;
+  color: white;
+}
+
+.editor-container button:first-child:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.editor-container button:last-child {
+  background-color: #111111;
+  color: white;
+}
+
+.editor-container button:last-child:hover {
+  background-color: #131212;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .editor-container {
+    padding: 15px;
+  }
+
+  .editor-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .editor-container input,
+  .editor-container textarea,
+  .editor-container select {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .editor-container button {
+    padding: 10px 15px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .editor-container {
+    padding: 15px;
+    margin: 30px auto;
+  }
+
+  .editor-container h2 {
+    font-size: 1.25rem;
+  }
+
+  .editor-container input,
+  .editor-container textarea,
+  .editor-container select {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .editor-container button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .editor-container {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .editor-container h2 {
+    font-size: 1.1rem;
+  }
+
+  .editor-container input,
+  .editor-container textarea,
+  .editor-container select {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  .editor-container button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+}
