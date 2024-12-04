@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams, useNavigate } from 'react-router-dom';
 import '../styles/templateEdit.css'
+import BASE_URL from '../config';
 
 const TemplateEditor = () => {
   const { id } = useParams();
@@ -12,7 +13,7 @@ const TemplateEditor = () => {
   useEffect(() => {
     if (id) {
       setLoading(true);
-      axios.get(`http://localhost:8000/api/templates/${id}`)
+      axios.get(`${BASE_URL}/api/templates/${id}`)
         .then(res => {
           setTemplate(res.data);
           setLoading(false);
@@ -34,8 +35,8 @@ const TemplateEditor = () => {
   const handleSave = () => {
     setLoading(true);
     const request = id
-      ? axios.put(`http://localhost:8000/api/templates/${id}`, template)
-      : axios.post('http://localhost:8000/api/templates', template);
+      ? axios.put(`${BASE_URL}/api/templates/${id}`, template)
+      : axios.post(`${BASE_URL}/api/templates`, template);
 
     request
       .then(res => {

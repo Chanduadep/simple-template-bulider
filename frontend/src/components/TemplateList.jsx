@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import '../styles/templateList.css';
+import BASE_URL from '../config';
 
 const TemplateList = () => {
   const [templates, setTemplates] = useState([]);
@@ -9,7 +10,7 @@ const TemplateList = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:8000/api/templates')
+      .get(`${BASE_URL}/api/templates`)
       .then((res) => setTemplates(res.data))
       .catch((err) => console.error(err));
   }, []);
