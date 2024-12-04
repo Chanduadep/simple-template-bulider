@@ -6,7 +6,7 @@ import bodyParser from 'body-parser';
 import templateRoutes from './routes/template.routes.js';
 
 const app = express();
-dotenv.config()
+
 const PORT = process.env.PORT || 8000;
 
 app.use(cors());
